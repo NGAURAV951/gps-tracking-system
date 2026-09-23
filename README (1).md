@@ -54,11 +54,14 @@ A real-time GPS tracker built on an ESP32 that reads location from a NEO-6M GPS 
 
 ## What I learned
 
-- [Add 1-2 real points, e.g. working with AT commands to control a GSM module, handling two hardware serial ports at once on the ESP32, timing SMS sends to avoid excess cost/spam.]
+1. Learned how to use AT commands with the SIM800L GSM module to check SIM status, signal strength, network registration, and configure SMS mode.
+2. Learned how to handle GPS and GSM communication on separate hardware serial interfaces of the ESP32, while using TinyGPS++ to continuously decode GPS data.
 
 ## Possible improvements
 
-- [Only list ideas you'd actually want to build, e.g. switching to a data-based tracking service instead of SMS, adding a low-battery alert, GPS+WiFi hybrid tracking.]
+1. Add GPS + Wi-Fi hybrid tracking so the system can use Wi-Fi when available and GSM when cellular communication is needed.
+2. Add a low-battery monitoring and alert system so the user receives a warning before the tracker shuts down.
+3. Replace periodic SMS updates with a web/mobile dashboard for real-time location tracking, reducing the need for repeated SMS messages.
 
 ## Author
 
