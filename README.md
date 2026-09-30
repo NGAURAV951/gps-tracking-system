@@ -8,7 +8,7 @@ A real-time GPS tracker built on an ESP32 that reads location from a NEO-6M GPS 
 - **SMS location updates:** sends the current location, along with a ready-to-open Google Maps link, to a phone number every 60 seconds whenever the GPS location updates.
 - **SIM800L initialization over AT commands:** checks SIM status, signal quality, and network registration before sending messages.
 - **Status LEDs:** one LED flashes on each GPS update, another flashes when an SMS is sent.
-- 
+-  
 ## Build photos
 
 ![Breadboard setup](breadboard_setup_1.jpeg)
